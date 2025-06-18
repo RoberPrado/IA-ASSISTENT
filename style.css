@@ -1,12 +1,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background-color: #f1f3f5;
-  color: #333;
+  background-color: #111;
+  color: #f1f1f1;
 }
 
 header {
-  background-color: #0d6efd;
+  background-color: #b00020;
   color: white;
   padding: 30px 20px;
   text-align: center;
@@ -21,8 +21,15 @@ header {
 }
 
 .robot-img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
 main {
@@ -32,15 +39,20 @@ main {
 }
 
 .voice-section {
-  background-color: white;
+  background-color: #1e1e1e;
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.2);
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.voice-section:hover {
+  transform: scale(1.01);
 }
 
 .btn-mic, .btn-generate {
-  background-color: #0d6efd;
+  background-color: #b00020;
   color: white;
   font-size: 1.1rem;
   padding: 15px 25px;
@@ -48,11 +60,12 @@ main {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 .btn-mic:hover, .btn-generate:hover {
-  background-color: #084298;
+  background-color: #8e001a;
+  transform: scale(1.05);
 }
 
 textarea {
@@ -62,29 +75,32 @@ textarea {
   padding: 12px;
   margin-top: 20px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #555;
+  background-color: #222;
+  color: #f1f1f1;
   resize: none;
 }
 
 .output-section {
   margin-top: 30px;
-  background: #ffffff;
+  background: #1c1c1c;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.15);
 }
 
 pre {
-  background-color: #f8f9fa;
+  background-color: #2a2a2a;
   padding: 20px;
   border-radius: 8px;
   font-size: 1rem;
   white-space: pre-wrap;
+  color: #eee;
 }
 
 footer {
   text-align: center;
-  background-color: #0d6efd;
+  background-color: #b00020;
   color: white;
   padding: 15px;
   margin-top: 50px;

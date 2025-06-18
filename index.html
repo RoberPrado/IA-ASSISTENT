@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asistente de Requerimientos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asistente Virtual de Requerimientos</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="robot-container">
-      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" alt="Robot Asistente" class="robot-img">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712105.png" alt="Asistente Robot" class="robot-img animated" />
       <div>
         <h1>Asistente Virtual de Requerimientos</h1>
-        <p>Habla y transforma tus ideas en historias de usuario listas para desarrollo.</p>
+        <p>Dicta tus ideas y genera historias de usuario automáticamente.</p>
       </div>
     </div>
   </header>
 
   <main>
     <section class="voice-section">
-      <button id="start-recording" class="btn-mic">
-        🎙️ Dictar requerimiento
-      </button>
+      <button id="start-recording" class="btn-mic">🎙️ Dictar requerimiento</button>
       <textarea id="transcription" placeholder="Aquí aparecerá el texto dictado..." readonly></textarea>
       <button id="generate" class="btn-generate">⚙️ Generar Plantilla</button>
     </section>

@@ -3,33 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Generador de Requerimientos</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <title>Asistente de Requerimientos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Generador de Requerimientos por Voz</h1>
-    <p>Dicta tus necesidades y genera historias de usuario de forma automática.</p>
+    <div class="robot-container">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712107.png" alt="Robot Asistente" class="robot-img">
+      <div>
+        <h1>Asistente Virtual de Requerimientos</h1>
+        <p>Habla y transforma tus ideas en historias de usuario listas para desarrollo.</p>
+      </div>
+    </div>
   </header>
 
   <main>
     <section class="voice-section">
       <button id="start-recording" class="btn-mic">
-        <i class="fa fa-microphone"></i> Grabar
+        🎙️ Dictar requerimiento
       </button>
       <textarea id="transcription" placeholder="Aquí aparecerá el texto dictado..." readonly></textarea>
-      <button id="generate" class="btn-generate">Generar Plantilla</button>
+      <button id="generate" class="btn-generate">⚙️ Generar Plantilla</button>
     </section>
 
     <section class="output-section">
-      <h2>Requerimiento Generado</h2>
+      <h2>🧾 Requerimiento Generado</h2>
       <pre id="output"></pre>
     </section>
   </main>
 
   <footer>
-    <p>Prototipo de Generación Automática de Requerimientos. <br>Creado con ❤️ y tecnología moderna.</p>
+    <p>🤖 Asistente de Requerimientos - Prototipo educativo 2025</p>
   </footer>
 
   <script src="script.js"></script>

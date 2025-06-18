@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prototipo de Requerimientos por Voz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Requerimientos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🎤 Prototipo IA para Requerimientos</h1>
+  <header>
+    <h1>Generador de Requerimientos por Voz</h1>
+    <p>Dicta tus necesidades y genera historias de usuario de forma automática.</p>
+  </header>
 
-  <button id="start-recording">🎙️ Dictar requerimiento</button>
-  <p><strong>Transcripción:</strong></p>
-  <textarea id="transcription" rows="5" placeholder="Aquí aparecerá el texto dictado..."></textarea>
+  <main>
+    <section class="voice-section">
+      <button id="start-recording" class="btn-mic">
+        <i class="fa fa-microphone"></i> Grabar
+      </button>
+      <textarea id="transcription" placeholder="Aquí aparecerá el texto dictado..." readonly></textarea>
+      <button id="generate" class="btn-generate">Generar Plantilla</button>
+    </section>
 
-  <button id="generate">🧠 Generar plantilla</button>
+    <section class="output-section">
+      <h2>Requerimiento Generado</h2>
+      <pre id="output"></pre>
+    </section>
+  </main>
 
-  <p><strong>Requerimiento generado:</strong></p>
-  <pre id="output"></pre>
+  <footer>
+    <p>Prototipo de Generación Automática de Requerimientos. <br>Creado con ❤️ y tecnología moderna.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
